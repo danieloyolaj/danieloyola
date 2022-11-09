@@ -1,4 +1,9 @@
 import './App.css'
+import About from './components/About'
+import Backend from './components/Backend'
+import Frontend from './components/Frontend'
+import Mobile from './components/Mobile'
+
 
 function App() {
 
@@ -16,15 +21,15 @@ function App() {
         
         <h1>Daniel Oyola</h1>
         <div className="header-location">
-          <img className="location-pin" src="./src/assets/location-pin.svg" alt="" srcset="" />
+          <img className="location-pin" src="./src/assets/location-pin.svg" alt="Location-pin" srcSet="./src/assets/location-pin.svg" />
           <h3 className='location-title'>Cobija, Bolivia</h3>
-          <img className="bolivia-flag" src="./src/assets/bolivia.png" alt="Bolivia flag" srcSet=''/>
+          <img className="bolivia-flag" src="./src/assets/bolivia.png" alt="Bolivia flag" srcSet="./src/assets/bolivia.png"/>
         </div>
         <h2>Full Stack Web Developer</h2>
         <div className="social-media">
-          <a href="https://www.linkedin.com/in/danieloyolaj" target="_blank"><img className="social-media-icon" src="./src/assets/linkedin-icon.svg" alt="" srcset="" /></a>
-          <a href="https://twitter.com/daniel0708" target="_blank"><img className="social-media-icon" src="./src/assets/twitter-icon.svg" alt="" srcset="" /></a>
-          <a href="mailto:danieloyola@softerdo.com"><img className="social-media-icon" src="./src/assets/mail-icon.svg" alt="" srcset="" /></a>
+          <a href="https://www.linkedin.com/in/danieloyolaj" target="_blank"><img className="social-media-icon" src="./src/assets/linkedin-icon.svg" alt="Linked-in" srcSet="./src/assets/linkedin-icon.svg" /></a>
+          <a href="https://twitter.com/daniel0708" target="_blank"><img className="social-media-icon" src="./src/assets/twitter-icon.svg" alt="Twitter" srcSet="./src/assets/twitter-icon.svg" /></a>
+          <a href="mailto:danieloyola@softerdo.com"><img className="social-media-icon" src="./src/assets/mail-icon.svg" alt="Email-icon" srcSet="./src/assets/mail-icon.svg" /></a>
         </div>
         </div>
         </div>
@@ -79,17 +84,10 @@ function App() {
         </div>
       <div className="column">
         <main>
-          <h2>About me</h2>
-          <p>
-            I am a nice guy who likes the good things in life: a lovely family, 
-            a nice place to live and a good job. I also like to involve in the
-            community whenever time allows it. I was raised with good values 
-            and I guide my life with the principles of spirituality, hard work,
-            and kindness towards people and animals too.
-
-            By the way, I'm passionate about web technologies, and I always
-            try to improve that which I'm told to.
-          </p>
+          <About />
+          <Frontend />
+          <Backend />
+          <Mobile />
         </main>
       </div>
       

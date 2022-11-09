@@ -2,7 +2,13 @@ import React from 'react'
 
 const Mobile = () => {
   return (
-    <div>Mobile</div>
+    <div>
+      <h2>Mobile</h2>
+      <ul>
+        <li>Counter App</li>
+        <li>Quiz Game</li>
+      </ul>
+    </div>
   )
 }
 
