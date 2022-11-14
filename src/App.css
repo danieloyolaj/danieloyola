@@ -213,6 +213,16 @@ main{
   margin-top: 50px;
 }
 
+/**** STUDIES *******/
+.studies-institution{
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.sub-tag{
+  margin-left: 20px;
+}
 
 /**** FOOTER *******/
 footer{

@@ -2,7 +2,7 @@ import './App.css'
 import About from './components/About'
 import Backend from './components/Backend'
 import Frontend from './components/Frontend'
-import Mobile from './components/Mobile'
+import Fullstack from './components/Fullstack'
 
 
 function App() {
@@ -41,11 +41,11 @@ function App() {
               <h2>Projects</h2>
               <h3 className="project-profile">Frontend Development</h3>
               <h3 className="project-profile">Backend Development</h3>
-              <h3 className="project-profile">Mobile Development</h3>
+              <h3 className="project-profile">Full Stack Development</h3>
             </div>
             <div className="skills">
               <h2>Skills</h2>
-              <ul >
+              <ul>
                 <li className='skills-chips c-blue'>HTML</li>
                 <li className='skills-chips c-blue'>CSS</li>
                 <li className='skills-chips c-blue'>Javascript</li>
@@ -87,7 +87,7 @@ function App() {
           <About />
           <Frontend />
           <Backend />
-          <Mobile />
+          <Fullstack />
         </main>
       </div>
       
