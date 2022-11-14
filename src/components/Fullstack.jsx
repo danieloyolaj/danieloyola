@@ -3,10 +3,10 @@ import React from 'react'
 const Mobile = () => {
   return (
     <div>
-      <h2>Mobile</h2>
+      <h2>Full Stack</h2>
       <ul>
-        <li>Counter App</li>
-        <li>Quiz Game</li>
+        <li>Quiz App</li>
+        <li>Study Pal</li>
       </ul>
     </div>
   )

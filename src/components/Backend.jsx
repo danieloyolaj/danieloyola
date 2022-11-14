@@ -9,8 +9,9 @@ const Backend = () => {
         <li>Budget API</li>
         <li>Recipes API</li>
         <li>Chat API</li>
-        <li>Daily Quote API</li>
-        <li>Quiz Game API</li>
+        <li>Scriptures API</li>
+        <li>Blog API</li> 
+        
       </ul>
     </div>
   )
