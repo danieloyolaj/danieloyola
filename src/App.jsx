@@ -1,4 +1,5 @@
 import './App.css'
+import {useState} from 'react'
 import About from './components/About'
 import Backend from './components/Backend'
 import Frontend from './components/Frontend'
@@ -6,6 +7,32 @@ import Fullstack from './components/Fullstack'
 
 
 function App() {
+
+  const [showAbout, setShowAbout] = useState(true)
+  const [showFront, setShowFront] = useState(false)
+  const [showBack, setShowBack] = useState(false)
+  const [ showFullStack, setShowFullStack] = useState(false)
+
+  const handleShowFront = () => {
+    setShowAbout(false)
+    setShowFront(true)
+    setShowBack(false)
+    setShowFullStack(false)
+  }
+  
+  const handleShowBack = () => {
+    setShowAbout(false)
+    setShowFront(false)
+    setShowFullStack(false)
+    setShowBack(true)
+  }
+
+  const handleShowFullstack = () => {
+    setShowAbout(false)
+    setShowFront(false)
+    setShowBack(false)
+    setShowFullStack(true)
+  }
 
   return (
     <div className="App">
@@ -39,9 +66,9 @@ function App() {
             <aside>
             <div className="projects">
               <h2>Projects</h2>
-              <h3 className="project-profile">Frontend Development</h3>
-              <h3 className="project-profile">Backend Development</h3>
-              <h3 className="project-profile">Full Stack Development</h3>
+              <h3 className="project-profile" onClick={handleShowFront}>Frontend Development</h3>
+              <h3 className="project-profile" onClick={handleShowBack}>Backend Development</h3>
+              <h3 className="project-profile" onClick={handleShowFullstack}>Full Stack Development</h3>
             </div>
             <div className="skills">
               <h2>Skills</h2>
@@ -84,10 +111,10 @@ function App() {
         </div>
       <div className="column">
         <main>
-          <About />
-          <Frontend />
-          <Backend />
-          <Fullstack />
+          { showAbout ? <About /> : ''}
+          { showFront ? <Frontend /> : ''}
+          { showBack ? <Backend /> : ''}
+          { showFullStack ? <Fullstack /> : ''}
         </main>
       </div>
       
