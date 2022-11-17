@@ -10,6 +10,7 @@
   --linkedin: #1468C0;
   --twitter: #2E9DEE;
   --dark-background: #1D2226;
+  --button-hover: #d2d2d2;
 }
 
 .project-container{
@@ -27,14 +28,17 @@
   font-size: 1.1em;
   cursor: pointer;
   padding-left: 15px;
-  margin: 0;
+  margin: 2px ;
   border-bottom: 1px solid #ccc;
   background-color: rgb(232, 232, 232);
   color: var(--fontcolor);
 }
+.frontend-title{
+  margin-bottom: 13px;
+}
 
 .project-title:hover{
-  background-color: #d2d2d2;
+  background-color: var(--button-hover);
 }
 
 .project-screenshot{

@@ -12,6 +12,7 @@
   --linkedin: #1468C0;
   --twitter: #2E9DEE;
   --dark-background: #1D2226;
+  --divider: #717171;
 }
 
 body{
@@ -84,8 +85,7 @@ li{
 }
 
 /**** HEADER *******/
-header{
-}
+
 .header-container{
   display: flex;
 }
@@ -142,8 +142,8 @@ header{
 aside{
   margin-top: 50px;
   width: 270px;
-  border-right: solid 1px var(--fontcolor);
-  /* background-color: aliceblue; */
+  height: calc(100% - 2%);
+  border-right: 1px solid var(--divider);
 }
 
 .project-profile{

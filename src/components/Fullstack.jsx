@@ -8,6 +8,11 @@ const Mobile = () => {
         <li>Quiz App</li>
         <li>Study Pal</li>
       </ul>
+      <h3>Clones</h3>
+      <ul>
+        <li>Spotify</li>
+        <li></li>
+      </ul>
     </div>
   )
 }
