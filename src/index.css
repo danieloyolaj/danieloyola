@@ -1,17 +1,40 @@
 /**** FRONT-END *******/
 
-.project-card{
+:root{
+  --mybackground: #E0E1DD;
+  --primary: #415A77;
+  --fontcolor: #0D1B2A;
+  --redchips: #E63946;
+  --bluechips: #1D3557;
+  --skybluechips: #457B9D;
+  --linkedin: #1468C0;
+  --twitter: #2E9DEE;
+  --dark-background: #1D2226;
+}
+
+.project-container{
   width: 100%;
+}
+
+.project-card{
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-
 }
 
 .project-title{
-  font-size: 1.4em;
-  font-weight: 900;
+  height: 40px;
+  font-size: 1.1em;
+  cursor: pointer;
+  padding-left: 15px;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+  background-color: rgb(232, 232, 232);
+  color: var(--fontcolor);
+}
+
+.project-title:hover{
+  background-color: #d2d2d2;
 }
 
 .project-screenshot{
@@ -30,3 +53,8 @@
   margin-left: 5px;
   margin-right: 5px;
 }
+
+.clones-title{
+  margin: 15px 0 15px 0;
+}
+

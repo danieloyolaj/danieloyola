@@ -1,19 +1,29 @@
 import React from 'react'
+import { useState } from 'react'
 
 const Frontend = () => {
 
-  
+  const [showContent, setShowContent] = useState(false)
+  const [showPokedex, setShowPokedex] = useState(false)
 
+  const handleShowContent = () => {
+    setShowContent(!showContent)
+  }
   
+  const handleShowPokedex = () => {
+    setShowPokedex(!showPokedex)
+  }
+
   return (
     <div className='frontend-container'>
       <h2>Front-end</h2>
-      <article className='project-card'>
-        
+      
+        <p className='project-title' onClick={handleShowContent}>E-commerce Store </p>
+      {
+        showContent &&
+        <article className='project-card'>
+
         <ul>
-          <li className='project-title'>
-            E-commerce Store
-          </li>
           <li>
             <img className='project-screenshot' src="../src/assets/ecommerce-screenshot.jpg" alt="" srcSet="" />
           </li>
@@ -58,12 +68,13 @@ const Frontend = () => {
           <li>- Device responsive</li>
         <br />
       </article>
-
-      <article>
+      }
+      
+      <p className='project-title' onClick={handleShowPokedex}>Pokedex </p>
+      {
+        showPokedex &&
+        <article>
         <ul>
-          <li className='project-title'>
-            Pokedex
-          </li>
           <li>
             <img className='project-screenshot' src="../src/assets/ecommerce-screenshot.jpg" alt="" srcSet="" />
           </li>
@@ -101,18 +112,20 @@ const Frontend = () => {
           <li>- Device responsive</li>
         <br />
       </article>
+      }
+      
 
-
-      <ul>
-        <li>Rick & Morty</li>
-      </ul>
-      <h3>Clones</h3>
-      <ul>
-        <li>YouTube clone</li>
-        <li>Netflix clone</li>
-        <li></li>
-      </ul>
-
+      <p className='project-title' onClick={handleShowPokedex}>Rick & Morty</p>
+      <p className='project-title' onClick={handleShowPokedex}>Book list</p>
+      <p className='project-title' onClick={handleShowPokedex}>Music Player</p>
+      
+      <h3 className='clones-title'>Clones</h3>
+     
+      <p className='project-title' onClick={handleShowPokedex}>YouTube</p>
+      <p className='project-title' onClick={handleShowPokedex}>Netflix</p>
+      <p className='project-title' onClick={handleShowPokedex}>Yahoo Mail</p>
+      <p className='project-title' onClick={handleShowPokedex}>Quotex - Web Trading Platform - Still in process</p>
+      
     </div>
   )
 }

@@ -213,6 +213,10 @@ main{
   margin-top: 50px;
 }
 
+.column-right{
+  width: 100%;
+}
+
 /**** STUDIES *******/
 .studies-institution{
   font-weight: 600;

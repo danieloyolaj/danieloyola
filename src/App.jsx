@@ -109,7 +109,7 @@ function App() {
             </div>
           </aside>
         </div>
-      <div className="column">
+      <div className="column-right">
         <main>
           { showAbout ? <About /> : ''}
           { showFront ? <Frontend /> : ''}
