@@ -1,4 +1,5 @@
 /**** FRONT-END *******/
+
 .project-card{
   width: 100%;
   display: flex;
@@ -8,7 +9,7 @@
 
 }
 
-.ecommerce-title{
+.project-title{
   font-size: 1.4em;
   font-weight: 900;
 }
